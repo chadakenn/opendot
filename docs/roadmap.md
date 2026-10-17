@@ -17,6 +17,8 @@ Current project stage: **offline research**. These are proposed milestones, not 
 
 ## Phase 1 — Identify stock hardware state
 
+- [x] Review [no-alexa's first-hand Crumpet UART, fastboot and NAND documentation](no-alexa-hardware-reference.md); do not mix Donut pinouts.
+- [ ] Confirm that no-alexa main/mic board revisions match our physical device.
 - [ ] Design an **internet-isolated** first-boot plan to avoid unplanned upgrades.
 - [ ] Identify the currently installed firmware, rather than relying on the cached Alexa app record.
 - [ ] Record read-only boot/diagnostic information, if the device exposes a supported interface.
