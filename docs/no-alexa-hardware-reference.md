@@ -43,7 +43,7 @@ The wiki documents serial boot output from the main PCB's test pads:
 - **115200 baud** at the preloader stage.
 - **921600 baud** during later boot.
 - Logs include bootloader build details, NAND detection, partition layout, active A/B slot, and security state. Actual log detail varies by software release.
-- Researcher reports a fastboot entry via the **S4 Action/“uber” button**, or by taking **TP54 to ground** on the tested board, with USB connected. A green ring was reported in this condition.
+- Researcher reports a fastboot entry via the **S4 (“uber”) button**, or by taking **TP54 to ground** on the tested board, with USB connected. A green ring was reported in this condition.
 - The author's [comment on Issue #1](https://github.com/jvandewiel/no-alexa/issues/1#issuecomment-1579313148) says only two UART wires are needed for a basic observation and points to TP54 near the main board's connector.
 
 **Caution:** These are research observations, **not verified connection instructions for our board**. TP54 location/identity, TX/GND and logic voltage must be checked against actual high-resolution board photos and a meter. Do **not** attach adapter VCC, assume 3.3 V logic, or deliberately short pads based solely on text descriptions.
