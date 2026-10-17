@@ -6,6 +6,10 @@ _2026-10-17 · Read-only examination of selected vendor audio configuration and 
 
 The OpenDot goal is **Home Assistant Assist on the original Echo Dot C78MP8 hardware**. Even with a custom boot path, the firmware must support microphone capture, speaker output, gain/mixer controls, audio preprocessing and possibly LED/button interfaces. None of these functions has been tested on the physical unit.
 
+## Physical hardware references (no-alexa research)
+
+The [no-alexa Hardware wiki](https://github.com/jvandewiel/no-alexa/wiki/Hardware) identifies four MEMS microphones (MK1–MK4), **two TLV320ADC3101** stereo ADC devices, **IS31FL3236** LED controller, **12 RGB LEDs**, and a **TI TAS2770** amplifier on the author's tested 3rd-gen boards. These are hardware-research observations, **not** direct inspection of our device. See [no-alexa reference notes](no-alexa-hardware-reference.md).
+
 ## Verified cross-release comparisons
 
 The following extracted file SHA-256 hashes were independently matched against both full system inventories before comparing their bytes.
