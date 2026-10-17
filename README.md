@@ -38,6 +38,7 @@ The intended end result is an Alexa-free voice satellite using the existing micr
 
 ## Documentation
 
+- [**Primary C78MP8 hardware reference: no-alexa wiki, UART, fastboot, NAND**](docs/no-alexa-hardware-reference.md)
 - [Research status, confirmed facts and open questions](docs/research-status.md)
 - [November 2022 vs June 2023 firmware comparison](docs/firmware-comparison.md)
 - [Full SquashFS system service diff (actual file hashes)](docs/system-service-diff-2022-2023.md)
@@ -69,7 +70,7 @@ These scripts do not connect to, change, unlock, or flash a device. **Do not com
 
 ### Related community work
 
-- [No-Alexa: Echo Dot hardware investigation](https://github.com/jvandewiel/no-alexa)
+- [**No-Alexa: hardware and firmware research**](https://github.com/jvandewiel/no-alexa) · [wiki](https://github.com/jvandewiel/no-alexa/wiki) (primary hardware reference)
 - [Echo Dot Assist research](https://github.com/Gamer92000/echo-dot-assist)
 
 _Research notes last updated 2026-10-17._
