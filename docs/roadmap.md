@@ -8,8 +8,10 @@ Current project stage: **offline research**. These are proposed milestones, not 
 - [x] Record hardware identifier C78MP8 / Crumpet.
 - [x] Hash and catalog two downloaded OTA packages.
 - [x] Compare partition manifests and selected boot components.
-- [ ] Reproduce the extracted-system component inventory with scripts.
-- [ ] Confirm all reported architectural findings against source artifacts.
+- [x] Reconstruct both `system` partitions and compare file hashes (1,801 same; 582 changed; 47 added; 8 removed). See [full system diff](system-service-diff-2022-2023.md).
+- [x] Add read-only local extraction and filesystem comparison tools.
+- [ ] Confirm all reported architectural findings against source artifacts; separate static evidence from live behavior.
+- [ ] Investigate build-specific differences in `otad`, `ace_otad`, and their OTA support libraries.
 
 ## Phase 1 — Identify stock hardware state
 
