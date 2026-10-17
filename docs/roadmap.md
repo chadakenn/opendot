@@ -30,6 +30,8 @@ Current project stage: **offline research**. These are proposed milestones, not 
 - [ ] Distinguish *triggering a signed Amazon OTA* from *installing a custom OS*.
 - [ ] If software installation is impossible, evaluate recoverable hardware-assisted research paths.
 - [ ] Establish a tested backup and rescue plan **before writing to storage**.
+- [x] Review Macronix [WP#/PT NAND write-protection controls](nand-protection-vs-secure-boot.md); they do **not** bypass signed OTA/verified boot.
+- [ ] Identify actual flash part markings, package and non-destructive read path on our C78MP8.
 
 ## Phase 3 — Home Assistant satellite (not started)
 
