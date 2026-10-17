@@ -30,6 +30,7 @@ The intended end result is an Alexa-free voice satellite using the existing micr
 - Inspected full A/B OTA metadata, payload manifests, nine partition entries and boot properties.
 - Reconstructed and compared boot and LK images from both releases; compared manifest hashes, OTA certificates, ramdisk files and selected verification-related properties.
 - Reconstructed and validated **both system images** and compared the contents of all regular files: 1,801 identical, 582 changed, 47 added, 8 removed. The stock `update_engine`, `libdoppleroobe.so`, `libcivetweb.so`, and OTA trust-key files were byte-identical across these two releases.
+- ELF-level comparisons verified a transition from `lws_sspc_*` to `lws_ss_*` networking imports, a Minerva metrics migration, and additional `otad` diagnostics. **None proves a signature bypass.**
 - Found that **LK differs**, while `tee1` and `tee2` manifest hashes are **identical** across these releases.
 - Earlier third-party/assistant-assisted static analysis reported `oobed`, `ace_otad`, `otad`, A/B `update_engine` and Amazon one-time-unlock logic. These more detailed function-level conclusions **have not been independently reproduced in this repository**.
 
@@ -40,6 +41,7 @@ The intended end result is an Alexa-free voice satellite using the existing micr
 - [Research status, confirmed facts and open questions](docs/research-status.md)
 - [November 2022 vs June 2023 firmware comparison](docs/firmware-comparison.md)
 - [Full SquashFS system service diff (actual file hashes)](docs/system-service-diff-2022-2023.md)
+- [Detailed ELF OTA service changes](docs/ota-elf-diff-2022-2023.md)
 - [OTA and provisioning architecture: reported findings vs confirmed checks](docs/ota-architecture.md)
 - [Next milestones](docs/roadmap.md)
 
@@ -51,7 +53,7 @@ The metadata tool uses Python 3 and its standard library; it reads a **locally o
 python tools/inspect_ota.py "C:\path\to\update-kindle-crumpet-NS6555_user_4307_0008087720836.bin"
 ```
 
-For repeatable system comparisons, use `tools/extract_partition.py` and `tools/compare_extracted_systems.py` with WSL2 and `squashfs-tools`; see the [comparison report](docs/system-service-diff-2022-2023.md).
+For repeatable system comparisons, use `tools/extract_partition.py`, `tools/compare_extracted_systems.py`, and `tools/compare_ota_elf.py` with WSL2 and `squashfs-tools`; see the [comparison report](docs/system-service-diff-2022-2023.md).
 
 These scripts do not connect to, change, unlock, or flash a device. **Do not commit OTA binaries** or extracted Amazon images into this repo.
 
