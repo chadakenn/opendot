@@ -11,7 +11,9 @@ Current project stage: **offline research**. These are proposed milestones, not 
 - [x] Reconstruct both `system` partitions and compare file hashes (1,801 same; 582 changed; 47 added; 8 removed). See [full system diff](system-service-diff-2022-2023.md).
 - [x] Add read-only local extraction and filesystem comparison tools.
 - [ ] Confirm all reported architectural findings against source artifacts; separate static evidence from live behavior.
-- [ ] Investigate build-specific differences in `otad`, `ace_otad`, and their OTA support libraries.
+- [x] Extract and hash-check relevant OTA ELF objects in both releases.
+- [x] Compare ELF code/rodata, linked libraries and dynamic imports; see [ELF service diff](ota-elf-diff-2022-2023.md).
+- [ ] Separate SDK/telemetry migration from substantive update validation changes; no initial-install bypass has been demonstrated.
 
 ## Phase 1 — Identify stock hardware state
 
