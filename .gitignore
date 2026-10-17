@@ -1,0 +1,22 @@
+# Proprietary firmware and extracted partitions
+*.bin
+*.img
+*.squashfs
+*.cpio
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local analysis and potentially sensitive captures
+firmware/
+extracted/
+captures/
+*.pcap
+*.pcapng
+*.log
+build/
+__pycache__/
+.venv/
+.DS_Store
+Thumbs.db
