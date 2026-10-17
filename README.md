@@ -46,6 +46,7 @@ The intended end result is an Alexa-free voice satellite using the existing micr
 - [Audio hardware inventory for Home Assistant](docs/audio-hardware-inventory.md)
 - [Safe isolated first-boot plan](docs/isolated-first-boot.md)
 - [Macronix NAND write protection vs. Amazon secure boot](docs/nand-protection-vs-secure-boot.md)
+- [**Amonet/kamakiri Crumpet hardware access research**](docs/amonet-kamakiri-crumpet.md)
 - [OTA and provisioning architecture: reported findings vs confirmed checks](docs/ota-architecture.md)
 - [Next milestones](docs/roadmap.md)
 
