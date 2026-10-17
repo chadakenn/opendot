@@ -38,6 +38,8 @@ The [no-alexa Interfacing wiki](https://github.com/jvandewiel/no-alexa/wiki/Inte
 7. Its [fastboot observations](https://github.com/jvandewiel/no-alexa/wiki/Fastboot) show a locked CRUMPET fastboot device after the S4/“uber”-button startup (or TP54 to GND on that researcher's PCB) and USB connection. **Do not short TP54 until its location is independently confirmed on our board.** No-alexa's successful fastboot enumeration did not establish a working unlock or a NAND dump.
 8. If the device does not expose the installed build on an authenticated supported interface, static firmware images from other builds alone cannot establish the device's version.
 
+For comparison against documented experimental exploit support, see [amonet/kamakiri Crumpet research](amonet-kamakiri-crumpet.md). A separate researcher's 2021 preloader build **does not establish our installed version**. No flash write or downgrade is justified from that alone.
+
 ## Stop conditions
 
 - Unexpected registration/update prompt, provisioning changes, or request to reset.
