@@ -27,6 +27,8 @@ Current project stage: **offline research**. These are proposed milestones, not 
 ## Phase 2 — Assess initial installation
 
 - [ ] Determine whether stock firmware provides any authorized software-installation or diagnostic route.
+- [x] Locate [Crumpet-specific amonet-koboreru research](amonet-kamakiri-crumpet.md) for MT8516; no usable unlock confirmed.
+- [ ] Record *our* preloader/LK build descriptors with read-only UART and assess compatibility without writing to flash.
 - [ ] Distinguish *triggering a signed Amazon OTA* from *installing a custom OS*.
 - [ ] If software installation is impossible, evaluate recoverable hardware-assisted research paths.
 - [ ] Establish a tested backup and rescue plan **before writing to storage**.
