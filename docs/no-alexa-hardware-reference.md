@@ -61,6 +61,9 @@ The project's [fastboot report](https://github.com/jvandewiel/no-alexa/wiki/Fast
 
 ## NAND: destructive research, not our first step
 
+See [Macronix NAND WP#/PT control vs verified boot](nand-protection-vs-secure-boot.md). The `MX30LF4G28AD` write-protection feature affects chip programming but **does not** unlock Amazon's verified boot or OTA signatures.
+
+
 - The researcher **desoldered the NAND** and wired it into Raspberry Pi GPIO or FT2232H test adapters; this was **not** a demonstrated non-invasive in-circuit dump.
 - The [flash reader README](https://github.com/jvandewiel/no-alexa/blob/main/dump_flash_tool/README.md) reads pages repeatedly, compares results and saves matching reads.
 - NAND images involve scrambling and ECC corrections; the [decoding wiki](https://github.com/jvandewiel/no-alexa/wiki/Decoding-NAND-flash) documents PRBS scrambling and BCH parameters for the tested chip. Raw `*.bin` files cannot simply be treated as a mounted filesystem.
