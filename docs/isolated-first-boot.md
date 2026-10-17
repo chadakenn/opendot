@@ -6,6 +6,12 @@ _2026-10-17 · Planning only. The physical Echo Dot remains unplugged._
 
 Establish the firmware *actually installed* on the retail Echo Dot C78MP8 and document its boot behavior without allowing a surprise Amazon OTA download, reset, or flash write.
 
+## Board identification references
+
+Public Echo Dot v3 hardware notes list **C78MP8 / Crumpet** as FCC ID **2ARIW-2778** and main logic board **30-004397**. See [echohacking board revisions](https://github.com/echohacking/wiki/wiki/Echo-Dot-V3). These are reference identifiers, not a verified photograph of the user's specific board.
+
+Do **not** use pinouts or boot procedures from the earlier D9N29T / Donut board without comparing the actual C78MP8 board. No UART pad voltage has been confirmed yet.
+
 ## Current known state
 
 - Model physically identified as **C78MP8**, Crumpet family.
