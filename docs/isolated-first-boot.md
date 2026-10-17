@@ -12,6 +12,14 @@ The primary [no-alexa hardware wiki](https://github.com/jvandewiel/no-alexa/wiki
 
 Do **not** use pinouts or boot procedures from the earlier D9N29T / Donut board without comparing the actual C78MP8 board. No UART pad voltage has been confirmed yet.
 
+## 2026-10-17 actual-board photo check
+
+User-supplied photos of the **disassembled, unpowered board** show the silkscreen **`30-004397 REV 01`** next to the shield. This agrees with [no-alexa's MLB board revision](https://github.com/jvandewiel/no-alexa/wiki/Hardware). The photos also show accessible silkscreen-labeled test pads on the flex-cable side, including **`TM44`**, **`TM45`** and **`TM54`**. No power or electrical readings have been taken. Do **not** publicly post the unredacted original photographs with QR-code markings.
+
+The [no-alexa Interfacing wiki](https://github.com/jvandewiel/no-alexa/wiki/Interfacing) identifies **`TM44 = UART0 TX`** (device transmit, connect to USB-UART **RX** for a receive-only capture) and **`TM45 = UART0 RX`** (leave disconnected for now). It reports **115200 baud** for preloader output, switching to **921600 baud** later. These are source-documented assignments on the matching revision, but the actual voltage level and ground selection still need checking.
+
+**Read-only physical sequence when equipped:** Identify a confirmed GND using continuity with power off, establish UART logic voltage before connecting a serial adapter, then connect *only* GND and board TM44→adapter RX. Leave board TM45, adapter TX, and adapter VCC disconnected. Capture initial boot text. Do not bridge TM54 to ground, flash anything, or desolder NAND.
+
 ## Current known state
 
 - Model physically identified as **C78MP8**, Crumpet family.
