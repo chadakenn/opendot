@@ -42,6 +42,8 @@ The intended end result is an Alexa-free voice satellite using the existing micr
 - [November 2022 vs June 2023 firmware comparison](docs/firmware-comparison.md)
 - [Full SquashFS system service diff (actual file hashes)](docs/system-service-diff-2022-2023.md)
 - [Detailed ELF OTA service changes](docs/ota-elf-diff-2022-2023.md)
+- [Audio hardware inventory for Home Assistant](docs/audio-hardware-inventory.md)
+- [Safe isolated first-boot plan](docs/isolated-first-boot.md)
 - [OTA and provisioning architecture: reported findings vs confirmed checks](docs/ota-architecture.md)
 - [Next milestones](docs/roadmap.md)
 
